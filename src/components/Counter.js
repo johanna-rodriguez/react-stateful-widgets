@@ -75,7 +75,7 @@ export default function Counter() {
   return (
     <div className='widget-counter container'>
       <h2>Counter</h2>
-      <div id='count' style={(count%2 == 0) ? style :  {fontSize: '1.5em', marginBottom: '0.3em',color:"crimson"} } >
+      <div id='count' style={(count%2 == 0) ? style :  {...style, color:"crimson"} } >
         Number {count} is {(count%2 == 0) ? "even" : "odd" } {/* STEP 3 */}
       </div>
       <div>
